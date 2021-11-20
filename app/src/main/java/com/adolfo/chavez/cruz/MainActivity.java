@@ -8,32 +8,38 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    public void suma (){
-    }
-    public void resta (){
-    }
-    public void multiplicacion (){
-    }
-    public void division (){
-    }
-
 
     private Button buttonSuma;
+    private Button buttonResta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        buttonSuma = findViewById(R.id.buttonSuma);
-        buttonSuma.setOnClickListener(new View.OnClickListener(){
+        buttonSuma = findViewById(R.id.buttonSuma );
+        buttonSuma.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v){
-                abrirSuma();
+            public void onClick(View v) {
+                abrirSuma( );
+            }
+        });
+        buttonResta = findViewById(R.id.buttonResta );
+        buttonResta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirResta( );
             }
         });
     }
-    private void abrirSuma(){
-        Intent intent = new Intent(this,SumaActivity.class);
-        startActivity(intent);
+
+    private void abrirSuma() {
+        Intent intent = new Intent( this , SumaActivity.class );
+        startActivity( intent );
     }
+
+    private void abrirResta() {
+        Intent intent = new Intent( this , RestaActivity.class );
+        startActivity( intent );
+    }
+
 }

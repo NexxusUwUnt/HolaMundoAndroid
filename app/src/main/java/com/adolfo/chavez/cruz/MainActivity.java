@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Button buttonSuma;
     private Button buttonResta;
+    private Button buttonMultiplicacion;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +31,13 @@ public class MainActivity extends AppCompatActivity {
                 abrirResta( );
             }
         });
+        buttonMultiplicacion = findViewById(R.id.buttonMultiplicacion );
+        buttonMultiplicacion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirMultiplicacion( );
+            }
+        });
     }
 
     private void abrirSuma() {
@@ -39,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void abrirResta() {
         Intent intent = new Intent( this , RestaActivity.class );
+        startActivity( intent );
+    }
+    private void abrirMultiplicacion() {
+        Intent intent = new Intent( this , MultiplicacionActivity.class );
         startActivity( intent );
     }
 

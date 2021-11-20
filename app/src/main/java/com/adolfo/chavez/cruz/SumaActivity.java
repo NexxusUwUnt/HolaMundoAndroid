@@ -7,8 +7,6 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.google.android.material.textfield.TextInputEditText;
-
 public class SumaActivity extends AppCompatActivity {
 
     private EditText editTextX;
@@ -88,4 +86,5 @@ public class SumaActivity extends AppCompatActivity {
         }
         return false;
     }
+
 }

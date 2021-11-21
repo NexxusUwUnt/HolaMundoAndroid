@@ -9,20 +9,19 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputEditText;
 
-public class MultiplicacionActivity  extends AppCompatActivity {
-
-    private EditText editTextXM;
-    private EditText editTextYM;
-    private EditText editTextTotalM;
+public class DivisionActivity extends AppCompatActivity {
+    private EditText editTextXD;
+    private EditText editTextYD;
+    private EditText editTextTotalD;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_multiplicacion);
-        editTextXM = findViewById( R.id.editTextNumberXM );
-        editTextYM = findViewById( R.id.editTextNumberYM );
-        editTextTotalM = findViewById( R.id.editTextNumberTotalM );
-        editTextXM.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        setContentView(R.layout.activity_division);
+        editTextXD = findViewById( R.id.editTextNumberXD );
+        editTextYD = findViewById( R.id.editTextNumberYD );
+        editTextTotalD = findViewById( R.id.editTextNumberTotalD );
+        editTextXD.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if( !hasFocus ) {
@@ -30,7 +29,7 @@ public class MultiplicacionActivity  extends AppCompatActivity {
                 }
             }
         });
-        editTextYM.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+        editTextYD.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if( !hasFocus ) {
@@ -43,22 +42,22 @@ public class MultiplicacionActivity  extends AppCompatActivity {
     private void realizaOperacion()
     {
         int total = 0;
-        if( editTextXM.getText().toString() != null )
+        if( editTextXD.getText().toString() != null )
         {
-            if( isEntero( editTextXM.getText().toString() ) )
+            if( isEntero( editTextXD.getText().toString() ) )
             {
-                total += getEntero( editTextXM.getText().toString() );
+                total += getEntero( editTextXD.getText().toString() );
             }
         }
-        if( editTextYM.getText().toString() != null )
+        if( editTextYD.getText().toString() != null )
         {
-            if( isEntero( editTextYM.getText().toString() ) )
+            if( isEntero( editTextYD.getText().toString() ) )
             {
-                total *= getEntero( editTextYM.getText().toString() );
+                total /= getEntero( editTextYD.getText().toString() );
             }
         }
-        editTextTotalM.setText( String.format("%d" , total ) , TextView.BufferType.SPANNABLE );
-        editTextTotalM.setEnabled( false );
+        editTextTotalD.setText( String.format("%d" , total ) , TextView.BufferType.SPANNABLE );
+        editTextTotalD.setEnabled( false );
     }
 
     private int getEntero(String entero)

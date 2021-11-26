@@ -41,7 +41,7 @@ public class DivisionActivity extends AppCompatActivity {
     }
     private void realizaOperacion()
     {
-        int total = 0;
+        float total = 0;
         if( editTextXD.getText().toString() != null )
         {
             if( isEntero( editTextXD.getText().toString() ) )
@@ -56,7 +56,7 @@ public class DivisionActivity extends AppCompatActivity {
                 total /= getEntero( editTextYD.getText().toString() );
             }
         }
-        editTextTotalD.setText( String.format("%d" , total ) , TextView.BufferType.SPANNABLE );
+        editTextTotalD.setText( String.valueOf(total) ,TextView.BufferType.SPANNABLE );
         editTextTotalD.setEnabled( false );
     }
 

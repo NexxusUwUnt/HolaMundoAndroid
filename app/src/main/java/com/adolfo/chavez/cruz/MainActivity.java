@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonResta;
     private Button buttonMultiplicacion;
     private Button buttonDivision;
+    private Button buttonHorasAseg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +47,13 @@ public class MainActivity extends AppCompatActivity {
                 abrirDivision( );
             }
         });
+        buttonHorasAseg = findViewById(R.id.buttonHorasAseg);
+        buttonHorasAseg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abrirHoras( );
+            }
+        });
     }
 
     private void abrirSuma() {
@@ -65,5 +73,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent( this , DivisionActivity.class );
         startActivity( intent );
     }
-
+    private void abrirHoras() {
+        Intent intent = new Intent( this , HorasActivity.class );
+        startActivity( intent );
+    }
 }

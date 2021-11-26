@@ -7,11 +7,11 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="402dp"
-        android:layout_height="238dp"
+        android:layout_width="407dp"
+        android:layout_height="337dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="3dp"
-        tools:layout_editor_absoluteY="29dp">
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="30dp">
 
         <Button
             android:id="@+id/buttonSuma"
@@ -36,6 +36,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="División" />
+
+        <Button
+            android:id="@+id/buttonHorasAseg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Horas a Segundos" />
 
     </LinearLayout>
 

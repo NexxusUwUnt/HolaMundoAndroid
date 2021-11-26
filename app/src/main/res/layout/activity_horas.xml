@@ -7,6 +7,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#32A4B8"
         android:orientation="vertical">
 
         <EditText
@@ -27,6 +28,7 @@
             android:id="@+id/buttonConvertir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#32BA37"
             android:text="Convertir Segundos a Horas" />
 
     </LinearLayout>

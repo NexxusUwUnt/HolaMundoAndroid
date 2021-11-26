@@ -4,43 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E4477056"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="407dp"
-        android:layout_height="337dp"
+        android:layout_width="406dp"
+        android:layout_height="530dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="4dp"
-        tools:layout_editor_absoluteY="30dp">
+        tools:layout_editor_absoluteY="186dp">
 
         <Button
             android:id="@+id/buttonSuma"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#6E26C1"
             android:text="Suma" />
 
         <Button
             android:id="@+id/buttonResta"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#462D9E"
             android:text="Resta" />
 
         <Button
             android:id="@+id/buttonMultiplicacion"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#354DC3"
             android:text="Multiplicación" />
 
         <Button
             android:id="@+id/buttonDivision"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#2D68B1"
             android:text="División" />
 
         <Button
             android:id="@+id/buttonHorasAseg"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#32A4B8"
             android:text="Horas a Segundos" />
 
     </LinearLayout>

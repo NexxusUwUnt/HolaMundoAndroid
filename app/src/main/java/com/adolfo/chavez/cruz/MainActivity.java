@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonMultiplicacion;
     private Button buttonDivision;
     private Button buttonHorasAseg;
+    //Chávez Cruz Adolfo
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
